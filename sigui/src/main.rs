@@ -4,6 +4,7 @@ use ratatui::{
     DefaultTerminal, Frame,
     layout::{Constraint, Layout},
     style::{Color, Stylize},
+    text::Text,
     widgets::{Block, List, ListItem},
 };
 
@@ -63,6 +64,10 @@ fn render(frame: &mut Frame, state: &AppState) {
         .margin(1)
         .areas(border_area);
 
+    let [inner_inner_border] = Layout::vertical([Constraint::Fill(1)])
+        .margin(1)
+        .areas(inner_border);
+
     frame.render_widget(
         Block::bordered()
             .border_type(ratatui::widgets::BorderType::Rounded)
@@ -70,12 +75,29 @@ fn render(frame: &mut Frame, state: &AppState) {
         frame.area(),
     );
 
-    let list = List::new(
-        state
-            .todo_list
-            .iter()
-            .map(|x| ListItem::from(x.description.clone())),
+    let title = Text::from("SiGUI v0.1.0").centered();
+    frame.render_widget(title, border_area);
+
+    frame.render_widget(
+        Block::bordered()
+            .border_type(ratatui::widgets::BorderType::Rounded)
+            .fg(Color::Blue),
+        inner_border,
     );
 
-    frame.render_widget(list, inner_border);
+    frame.render_widget(Block::new(), inner_inner_border);
+
+    let text = Text::from("Tasks for the Day").centered();
+
+    frame.render_widget(text, inner_border);
+
+    let list = List::new(state.todo_list.iter().map(|x| {
+        ListItem::from(format!(
+            "[{}] {}",
+            if x.is_done { "✔️" } else { "❌" },
+            x.description.clone()
+        ))
+    }));
+
+    frame.render_widget(list, inner_inner_border);
 }
