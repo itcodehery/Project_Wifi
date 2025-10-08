@@ -1,4 +1,8 @@
+
+
 # SiGUI
+![<ALT TEXT>](https://img.shields.io/badge/version-v0.0.1ALPHA-<COLOR>)
+[![downloads](https://img.shields.io/github/downloads/itcodehery/Project_Wifi/total?color=brightgreen)](https://github.com/itcodehery/Project_Wifi/releases)
 
 A Terminal User Interface (TUI) for managing Wi-Fi connections on Windows.
 
