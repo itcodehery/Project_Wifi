@@ -1,4 +1,4 @@
-
+![SigUIBanner](images/sigui_banner.png)
 
 # SiGUI
 ![<ALT TEXT>](https://img.shields.io/badge/version-v0.0.1ALPHA-<COLOR>)
@@ -8,7 +8,7 @@ A Terminal User Interface (TUI) for managing Wi-Fi connections on Windows.
 
 ## About
 
-SiGUI is a lightweight and efficient command-line tool for managing wireless networks. It provides a simple and intuitive terminal-based interface for scanning, connecting to, and managing Wi-Fi networks. The application is built with Rust, uses the `ratatui` library to create the terminal user interface, and currently works on Windows by using `netsh`.
+SiGUI _(pronounced see-gooey)_ is a lightweight and efficient command-line tool for managing wireless networks. It provides a simple and intuitive terminal-based interface for scanning, connecting to, and managing Wi-Fi networks. The application is built with Rust, uses the `ratatui` library to create the terminal user interface, and currently works on Windows by using `netsh`.
 
 This project aims to offer a user-friendly alternative to graphical network managers, ideal for developers, system administrators, and anyone who prefers working in the terminal.
 
