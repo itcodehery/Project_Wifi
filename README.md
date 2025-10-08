@@ -12,6 +12,12 @@ SiGUI _(pronounced see-gooey)_ is a lightweight and efficient command-line tool 
 
 This project aims to offer a user-friendly alternative to graphical network managers, ideal for developers, system administrators, and anyone who prefers working in the terminal.
 
+Home Screen:
+![Main Screen](images/main.png)
+
+Password Screen:
+![Password Screen](images/password.png)
+
 ## Features
 
 *   **Scan for Networks:** Scan for available Wi-Fi networks and display them in a list.
