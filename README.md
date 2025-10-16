@@ -28,11 +28,18 @@ Password Screen:
 
 ## Installation
 
-This project is built with Rust. You will need to have the Rust toolchain (including `cargo`) installed.
+You can install `sigui` directly from crates.io:
+```sh
+cargo install sigui
+```
+
+### Build from source
+
+Alternatively, you can build it from source. You will need to have the Rust toolchain (including `cargo`) installed.
 
 1.  Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/itcodehery/Project_Wifi.git
     ```
 2.  Navigate to the project directory:
     ```sh
