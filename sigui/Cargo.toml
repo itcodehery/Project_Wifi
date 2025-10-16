@@ -6,7 +6,7 @@ authors = ["Hari Prasad <hariprasadbk@proton.me>"]
 description = "A TUI app for managing your connected wifi and perform a simple speed test."
 license = "MIT"
 repository = "https://github.com/itcodehery/Project_Wifi"
-readme = "./README.md"
+readme = "README.md"
 keywords = ["wifi", "tui","network"]
 categories = ["command-line-utilities"]
 
