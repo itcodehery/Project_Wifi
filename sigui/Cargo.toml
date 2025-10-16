@@ -2,9 +2,20 @@
 name = "sigui"
 version = "0.1.0"
 edition = "2024"
+authors = ["Hari Prasad <hariprasadbk@proton.me>"]
+description = "A TUI app for managing your connected wifi and perform a simple speed test."
+license = "MIT"
+repository = "https://github.com/itcodehery/Project_Wifi"
+readme = "./README.md"
+keywords = ["wifi", "tui","network"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 color-eyre = "0.6.5"
 crossterm = "0.29.0"
 ratatui = "0.29.0"
 tokio = "1.47.1"
+
+[[bin]]
+name = "sigui"
+path = "src/main.rs"
